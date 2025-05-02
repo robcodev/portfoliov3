@@ -24,7 +24,7 @@ interface SimpleImageApi {
     }
 }
 
-export default function BlogDashboard() {
+export default function EditorJs() {
     const ref = useRef<EditorJS | null>(null)
 
     class SimpleImage {
@@ -217,8 +217,6 @@ export default function BlogDashboard() {
     }, [])
 
     const handleSave = () => {
-        const $output = document.getElementById('output');
-
         ref.current?.save().then(async (savedData)=>{
             console.log(savedData, 'desde handleSave')
             await fetch('/api/blog', {
@@ -230,23 +228,12 @@ export default function BlogDashboard() {
                     content: savedData
                 })
             })
-            $output.innerText = JSON.stringify(savedData, null, 2);
         })
     }
 
     return (
         <>
-            <section id={'editorjs'} className={'text-whiteRob text-handjet-regular '}>
-
-                <button
-                    id={'saveData'}
-                    onClick={handleSave}
-                >guardar
-                </button>
-            </section>
-            <pre
-                className={'text-whiteRob text-handjet-regular'}
-                id={'output'}></pre>
+            <div id={'editorjs'} className={'text-whiteRob text-handjet-regular '}></div>
         </>
     )
 }

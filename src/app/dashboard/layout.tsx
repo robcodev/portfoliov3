@@ -49,7 +49,6 @@ export default function Layout({
         { name: "Dashboard", path: "/dashboard", icon: "◼" },
         { name: "Portfolio", path: "/dashboard/portfolio", icon: "◆" },
         { name: "Blog", path: "/dashboard/blog", icon: "◉" },
-        { name: "Settings", path: "/dashboard/settings", icon: "⚙" },
     ]
 
     return (

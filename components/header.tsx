@@ -10,7 +10,7 @@ export default function Header(){
                 </h1>
 
                 <nav>
-                    <div className={'flex gap-4 text-handjet-regular justify-center text-center  text-whiteRob text-2xl '}>
+                    <div className={'flex gap-4 text-handjet justify-center text-center  text-whiteRob text-2xl '}>
                         {/*<Link*/}
                         {/*    to={'/portafolio'}*/}
                         {/*    className={'hover:font-bold uppercase cursor-pointer'}*/}
@@ -20,10 +20,10 @@ export default function Header(){
                         {/*    className={'hover:font-bold uppercase cursor-pointer'}*/}
                         {/*>Blog</Link>*/}
                         <a
-                            className={'hover:font-bold uppercase cursor-pointer'}
+                            className={'hover:font-bold uppercase cursor-pointer text-handjet'}
                         >Sobre Mi</a>
                         <a
-                            className={'hover:font-bold uppercase cursor-pointer'}
+                            className={'hover:font-bold uppercase cursor-pointer text-handjet'}
                         >Contacto</a>
                     </div>
 

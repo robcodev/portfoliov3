@@ -69,14 +69,14 @@ export default function BlogSection() {
                         <div key={post.id}
                              className={'flex justify-between gap-4'}>
                             <article className={'border-2 border-whiteRob rounded-lg p-4 w-1/3'}>
-                                <h3 className={'text-start text-whiteRob capitalize text-handjet-regular text-2xl'}>
-                                    {headerBlock?.data?.text}
+                                <h3 className={'text-start text-whiteRob capitalize text-handjet-bold text-2xl'}>
+                                    {post.title}
                                 </h3>
-                                <p className={'text-whiteRob text-handjet-regular text-start mt-4'}>
-                                    {descriptionBlock?.data?.text}
+                                <p className={'text-whiteRob text-handjet text-start mt-4'}>
+                                    {post.description}
                                 </p>
                                 <div className={'flex justify-start mt-4'}>
-                                    <h4 className={'text-sm h-fit text-center align-baseline bg-whiteRob px-12 py-1 text-handjet-regular rounded-full'}>
+                                    <h4 className={'text-md h-fit text-center align-baseline bg-whiteRob px-12 py-1 text-handjet-regular rounded-full'}>
                                         Leer más...</h4>
                                     <Image
                                         className={'ms-2'}

@@ -17,7 +17,7 @@ export async function GET() {
 export async function POST(request: NextRequest) {
 
     const body = await request.json();
-    const {content} = body;
+    const {title, description, status, content} = body;
 
     console.log(content, 'aqui content');
 
@@ -29,6 +29,9 @@ export async function POST(request: NextRequest) {
                 content: content,
                 //     falta agregar la fecha de publicación a trave´s de un formulario web
                 //     falta regEx el header y convertir en slug
+                title: title,
+                description: description,
+                status: status,
 
             }
         ])

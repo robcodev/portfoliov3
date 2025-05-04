@@ -1,18 +1,21 @@
 
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
+import './emblaStyles.css'
+import {Anton, Courier_Prime, Handjet} from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const antonReg = Anton({
+    weight: '400',
+    variable: '--font-anton-regular',
+    subsets: ['latin']
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
+const handJet = Handjet({
+    variable: '--font-handjet-regular',
+})
 
 
 export default function RootLayout({
@@ -23,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${handJet.variable} ${antonReg.variable} antialiased`}
       >
         {children}
       </body>

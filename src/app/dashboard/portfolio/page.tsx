@@ -1,16 +1,25 @@
 "use client"
 
-import { useState } from "react"
+import {useEffect, useState} from "react"
 import Link from "next/link"
 
 export default function PortfolioPage() {
-    const [portfolioItems, setPortfolioItems] = useState([
-        { id: 1, title: "Project One", category: "Web Design", status: "Published", date: "2023-05-01" },
-        { id: 2, title: "Project Two", category: "Mobile App", status: "Published", date: "2023-04-15" },
-        { id: 3, title: "Project Three", category: "Branding", status: "Draft", date: "2023-03-22" },
-        { id: 4, title: "Project Four", category: "Web Design", status: "Published", date: "2023-02-10" },
-        { id: 5, title: "Project Five", category: "UI/UX", status: "Draft", date: "2023-01-05" },
-    ])
+    const [portfolioItems, setPortfolioItems] = useState([]);
+
+    useEffect(()=>{
+        const fetchData = async ()=>{
+            const response = await fetch('/api/portfolio/', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            const data = await response.json()
+            console.log(data)
+            setPortfolioItems(data)
+        }
+        fetchData()
+    }, [])
 
     return (
         <div>

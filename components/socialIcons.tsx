@@ -15,8 +15,8 @@ export default function SocialIcons() {
                     <Image
                         src={githubIcon}
                         alt={''}
-                        className={'h-5'}/>
-                    <span className={'uppercase text-whiteRob text-lg'}>github</span>
+                        className={'h-4 w-4'}/>
+                    <span className={'uppercase text-whiteRob text-anton text-lg'}>github</span>
                 </a>
 
                 <a className={'flex w-full border-2 gap-1 border-whiteRob rounded-full justify-center items-center  px-2 py-1'}
@@ -24,16 +24,16 @@ export default function SocialIcons() {
                     <Image
                         src={linkedinIcon}
                         alt={''}
-                        className={' h-4'}/>
-                    <span className={'uppercase text-whiteRob text-lg'}>linkedin</span>
+                        className={' h-4 w-4'}/>
+                    <span className={'uppercase text-whiteRob text-lg text-anton'}>linkedin</span>
                 </a>
                 <a className={'flex w-full gap-1 rounded-full justify-center items-center border-2 border-whiteRob px-2 py-1'}
                    href="#">
                     <Image
                         src={instagramIcon}
                         alt={''}
-                        className={'h-4'}/>
-                    <span className={'uppercase text-whiteRob text-lg'}>instagram</span>
+                        className={'h-4 w-4'}/>
+                    <span className={'uppercase text-whiteRob text-lg text-anton'}>instagram</span>
                 </a>
             </div>
         </>

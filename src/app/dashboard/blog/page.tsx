@@ -1,16 +1,26 @@
 "use client"
 
-import { useState } from "react"
+import {useEffect, useState} from "react"
 import Link from "next/link"
 
 export default function BlogPage() {
-    const [blogPosts, setBlogPosts] = useState([
-        { id: 1, title: "Getting Started with Next.js", category: "Development", status: "Published", date: "2023-05-10" },
-        { id: 2, title: "The Power of Tailwind CSS", category: "Design", status: "Published", date: "2023-04-25" },
-        { id: 3, title: "Building Responsive Layouts", category: "Design", status: "Draft", date: "2023-04-02" },
-        { id: 4, title: "Server Components in Next.js", category: "Development", status: "Published", date: "2023-03-15" },
-        { id: 5, title: "The Future of Web Development", category: "Opinion", status: "Draft", date: "2023-02-28" },
-    ])
+    const [blogPosts, setBlogPosts] = useState([]);
+
+    useEffect(()=>{
+        const fetchData = async ()=>{
+            const response = await fetch('/api/blog/', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+
+            const data = await response.json()
+            console.log(data)
+            setBlogPosts(data)
+        }
+        fetchData()
+    },[])
 
     return (
         <div>

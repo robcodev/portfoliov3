@@ -8,7 +8,6 @@ export default function SocialIcons() {
 
     return (
         <>
-
             <div className={'grid grid-cols-3 gap-2 my-8'}>
                 <a className={'flex gap-1 w-full rounded-full justify-center items-center border-2 border-whiteRob px-2 py-1 '}
                    href="#">

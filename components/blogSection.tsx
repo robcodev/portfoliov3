@@ -60,11 +60,6 @@ export default function BlogSection() {
                 </h3>
 
                 {blogPosts.map((post) => {
-                    const blocks = post.content.blocks as EditorBlock[];
-
-                    const headerBlock = blocks.find((b) => b.type === "header")
-                    const descriptionBlock = blocks.find((b) => b.type === "paragraph")
-
                     return (
                         <div key={post.id}
                              className={'flex justify-between gap-4'}>

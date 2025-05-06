@@ -1,10 +1,6 @@
-
-
-import type { Metadata } from "next";
-
 import "./globals.css";
 import './emblaStyles.css'
-import {Anton, Courier_Prime, Handjet} from "next/font/google";
+import {Anton, Handjet} from "next/font/google";
 
 const antonReg = Anton({
     weight: '400',

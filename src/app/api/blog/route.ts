@@ -32,7 +32,6 @@ export async function POST(request: NextRequest) {
                 title: title,
                 description: description,
                 status: status,
-
             }
         ])
 

@@ -115,6 +115,20 @@ export default function BlogPage() {
                             <button className="px-3 py-1 border rounded hover:bg-gray-50 disabled:opacity-50" disabled>
                                 Next
                             </button>
+                            {/*// const handleSave = () => {*/}
+                            {/*//     ref.current?.save().then(async (savedData)=>{*/}
+                            {/*//         console.log(savedData, 'desde handleSave')*/}
+                            {/*//         await fetch('/api/blog', {*/}
+                            {/*//             method: 'POST',*/}
+                            {/*//             headers: {*/}
+                            {/*//                 'Content-Type': 'application/json'*/}
+                            {/*//             },*/}
+                            {/*//             body: JSON.stringify({*/}
+                            {/*//                 content: savedData*/}
+                            {/*//             })*/}
+                            {/*//         })*/}
+                            {/*//     })*/}
+                            {/*// }*/}
                         </div>
                     </div>
                 </div>

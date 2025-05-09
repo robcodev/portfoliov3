@@ -8,11 +8,11 @@ export default function Footer() {
                 Robert Correa Toro
             </h2>
 
-
-
             <SocialIcons/>
             <p
-                className={'text-handjet-regular text-md my-8 text-whiteRob text-center'}>©2024-2025 Robert Correa Toro - Todos los derechos reservados.</p>
+                className={'text-handjet-regular text-md my-8 text-whiteRob text-center'}>
+                ©2024-2025 Robert Correa Toro - Todos los derechos reservados.
+            </p>
         </footer>
     )
 }

@@ -1,5 +1,3 @@
-import {Link} from "react-router-dom";
-
 export default function Header(){
     return(
         <>
@@ -11,14 +9,7 @@ export default function Header(){
 
                 <nav>
                     <div className={'flex gap-4 text-handjet justify-center text-center  text-whiteRob text-2xl '}>
-                        {/*<Link*/}
-                        {/*    to={'/portafolio'}*/}
-                        {/*    className={'hover:font-bold uppercase cursor-pointer'}*/}
-                        {/*    >Proyectos</Link>*/}
-                        {/*<Link*/}
-                        {/*    to={'/src/pages/admin/blog.jsx'}*/}
-                        {/*    className={'hover:font-bold uppercase cursor-pointer'}*/}
-                        {/*>Blog</Link>*/}
+
                         <a
                             className={'hover:font-bold uppercase cursor-pointer text-handjet'}
                         >Sobre Mi</a>
@@ -27,15 +18,10 @@ export default function Header(){
                         >Contacto</a>
                     </div>
 
-
                 </nav>
                 <div>
-                    <h4 className={'uppercase text-2xl text-whiteRob text-handjet-bold text-end'}>
-                        ES <br/>
-                        EN
-                    </h4>
-                </div>
 
+                </div>
             </header>
         </>
     )

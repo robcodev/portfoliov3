@@ -149,10 +149,7 @@ export default class SimpleImage {
         // @ts-expect-error
         this.data[tune] = !this.data[tune];
         this._acceptTuneView(blockId);
-
-        console.log(blockId, 'toggle tune block id')
     }
-
 
     _acceptTuneView(blockId?: string): void {
 

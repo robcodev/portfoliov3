@@ -6,11 +6,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState, useEffect } from "react"
 
-export default function Layout({
-                                            children,
-                                        }: {
-    children: React.ReactNode
-}) {
+export default function Layout({children} : { children: React.ReactNode}) {
     const [isAuthenticated, setIsAuthenticated] = useState(false)
     const [isSidebarOpen, setIsSidebarOpen] = useState(true)
     const pathname = usePathname()

@@ -54,7 +54,6 @@ export default function BlogSection() {
     return (
         <>
             <section className={' my-32 '}>
-
                 <h3 className={'text-whiteRob text-3xl text-start text-handjet-bold my-4'}>
                     / Blog
                 </h3>

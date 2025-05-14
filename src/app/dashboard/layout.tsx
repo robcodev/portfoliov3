@@ -19,7 +19,6 @@ export default function Layout({children} : { children: React.ReactNode}) {
             const isAdmin = true // Mock admin check
             setIsAuthenticated(isAdmin)
         }
-
         checkAuth()
     }, [])
 
@@ -79,7 +78,6 @@ export default function Layout({children} : { children: React.ReactNode}) {
                     </ul>
                 </nav>
             </div>
-
             {/* Main content */}
             <div className="flex-1 overflow-auto">
                 <header className="bg-white shadow-sm">

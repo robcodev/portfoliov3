@@ -19,8 +19,6 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const {title, description, status, content} = body;
 
-    console.log(content, 'aqui content');
-
     const {error} = await createClient()
         .from('blogPosts')
         .insert([

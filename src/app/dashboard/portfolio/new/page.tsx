@@ -29,9 +29,8 @@ export default function NewPortfolioItem() {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault()
-        // Here you would integrate with Editor.js and handle the submission
+        // handle submit editor
         console.log("Form submitted:", formData)
-        // Redirect or show success message
     }
 
     const handleSave = () => {

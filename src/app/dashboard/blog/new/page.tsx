@@ -12,7 +12,6 @@ import List from "@editorjs/list";
 import Paragraph from "@editorjs/paragraph";
 
 export default function NewBlogPost() {
-
     const editorjs = useRef<HTMLDivElement | null>(null);
     const ref = useRef<EditorJS | null>(null);
 
@@ -54,7 +53,6 @@ export default function NewBlogPost() {
                     //tags: formData.tags.split(','),
                 })
             })
-
         })
     }
 
@@ -89,8 +87,7 @@ export default function NewBlogPost() {
                 ref.current = null
             }
         }
-    }, [])
-
+    }, []);
     return (
         <div>
             <div className="flex items-center justify-between mb-6">

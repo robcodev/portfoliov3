@@ -24,7 +24,6 @@ export default class SimpleImage {
         icon: string
     }[];
 
-
     static get toolbox() {
         return {
             title: 'imagen',
@@ -102,10 +101,8 @@ export default class SimpleImage {
     }
 
     save(blockContent: HTMLElement) {
-
         const image = blockContent.querySelector('img');
         const caption = blockContent.querySelector('[contenteditable]');
-
 
         return Object.assign(this.data, {
             url: image?.src,
@@ -152,7 +149,6 @@ export default class SimpleImage {
     }
 
     _acceptTuneView(blockId?: string): void {
-
         this.settings.forEach(tune => {
             this.wrapper?.classList.toggle(tune.name, !!this.data[tune.name]);
 

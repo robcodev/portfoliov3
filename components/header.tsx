@@ -1,7 +1,8 @@
-export default function Header(){
-    return(
+export default function Header() {
+    return (
         <>
-            <header className={'flex justify-between my-8 mt-16 rounded w-full mx-auto'}>
+            <header
+                className={'flex justify-between my-8 mt-16 rounded w-full mx-auto'}>
                 <h1
                     className={'uppercase text-3xl items-start text-start text-whiteRob text-handjet-bold leading-[1em]'}>
                     Robert <br/> Correa <br/> Toro
@@ -17,11 +18,7 @@ export default function Header(){
                             className={'hover:font-bold uppercase cursor-pointer text-handjet'}
                         >Contacto</a>
                     </div>
-
                 </nav>
-                <div>
-
-                </div>
             </header>
         </>
     )
